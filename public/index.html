@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/dropLogo.png" type="image/ico" />
+    <title>Youtube Partyy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/public/style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <input type="text"  id="ytinputlink" 
+            class="ytinputlink" placeholder="enter video link or playlist link [youtubePartyV1.0.3_Beta]" name="ytinputlink" >
+            <input type="image"  id="logoutImg" class="logoutImg" src="/images/logout.png" alt="logout">
+        </div>
+        <div class="body">
+            <div class="mainContent">
+                <div id="playerWrapper">
+                    <div id="player"></div>
+                </div>
+                <div class="controls">
+                    <input type="button" value="startvibration" id='vibrate-on'>
+                    <input type="button" value="stopvibration" id='vibrate-off'>
+
+                    <input type="image" title="Sync Video" src="images/sync.svg" style="height: 20px; width: 30px;" id="sync" name="sync">
+                    <input type="image" title="Pause" src="/images/pause.svg" style="height: 20px; width: 30px;" id="pause" name="pause">
+                    <input type="image" title="Play" src="/images/play.svg" style="height: 20px; width: 30px;" id="play" name="play">
+                    <input type="image" title="Stop" src="/images/stop.svg" style=" height: 20px; width: 30px;" id="stop" name="stop">
+                    <input type="button" title="Seek to 10%" value="10%" id="ten" name="ten">
+                    <input type="button" title="Seek to 30%" value="30%" id="thirty" name="thirty">
+                    <input type="button" title="Seek to 60%" value="60%" id="sixty" name="sixty">
+                    <input type="button" title="Seek to 90%" value="90%" id="ninty" name="ninty">
+                    <input type="image" title="minus15seconds" src="/images/minus15seconds.svg" style=" height: 20px; width: 30px;" id="minus15" name="minus15">
+                    <input type="image" title="minus10seconds" src="/images/minus10seconds.svg" style=" height: 20px; width: 30px;" id="minus10" name="minus10">
+                    <input type="image" title="minus5seconds" src="/images/minus5seconds.svg" style=" height: 20px; width: 30px;" id="minus5" name="minus5">
+                    <input type="image" title="plus5seconds" src="/images/plus5seconds.svg" style=" height: 20px; width: 30px;" id="plus5" name="plus5">
+                    <input type="image" title="plus10seconds" src="/images/plus10seconds.svg" style=" height: 20px; width: 30px;" id="plus10" name="plus10">
+                    <input type="image" title="plus15seconds" src="/images/plus15seconds.svg" style=" height: 20px; width: 30px;" id="plus15" name="plus15">
+                    <input type="text" title="enter value in seconds"  class="customSeek" autocomplete="off" placeholder="enter time in seconds to seek" id="customSeek" name="customSeek">
+                    <div id="status"></div>
+                    <p>connectedUsers</p>
+                    <div id="connectedUsers-wrapper">
+                        <ul id="connectedUsers">
+                        </ul>
+                    </div>
+                </div> 
+            </div>
+            <div class="messagesModule" id="messageModule">
+                <ul class="messages" id="messages"></ul>
+                <input type="text" class="messageInputBox" id="message" placeholder="Enter message" autocomplete="off">
+            </div>
+            <div class="logs-wrapper" id="logs-wrapper">
+                <ul class="logs" id="logs"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-database.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+<script src="public/app.js"></script>
+
+</body>
+</html>
