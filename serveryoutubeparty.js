@@ -4,7 +4,7 @@ const app = express();
 const server = http.createServer(app);
 const { Server } = require("socket.io");
 const io = new Server(server);
-const port = 81;
+const port = 3000;
 
 app.get('/', (req, res) => {
     res.sendFile(__dirname + '/public/index.html');
