@@ -1,11 +1,11 @@
 {
   "name": "ytws",
   "version": "1.0.3",
-  "main": "server.js",
-  "start": "server.js",
+  "main": "serveryoutubeparty.js",
+  "start": "serveryoutubeparty.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node serveryoutubeparty.js"
   },
   "author": "akshat",
   "license": "ISC",
